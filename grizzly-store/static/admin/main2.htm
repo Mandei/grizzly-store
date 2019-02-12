@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.pd10
+{
+       margin:8px 20px;
+}
+
+.pd20
+{
+    margin:8px 35px;
+}
+  
+#filtersubmit {
+    position: relative;
+    z-index: 1;
+    left: -30px;
+    color: #7B7B7B;
+    cursor:pointer;
+    
+}
+#filtersubmitCategory
+{
+    position: relative;
+    z-index: 1;
+    left: -50px;
+    color: #7B7B7B;
+    cursor:pointer;
+}
+
+.tablink
+ {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 16px;
+  font-size: 17px;
+  width: 330px;
+  box-sizing: border-box;
+}
+
+.active,.tablink:hover
+{
+    opacity: 0.6;
+    border-bottom: 4px solid black;
+}
+
+.input_fieldpage2
+{
+    border-radius: 18px; 
+    padding:6px; 
+    margin-right:20px; 
+    border:none; 
+    width:180px;
+    background-color: rgb(231, 229, 229)
+}
+
+.table_enhnc
+{
+margin: 30px;
+}
+
+.round {
+  position: relative;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: black;
+  border-color: black;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+td button
+{
+width:80px;
+border-radius: 12px;
+border:none
+
+
+}
+input::placeholder 
+{
+  color: black;
+  font-size: 1em;
+}
+
+button:focus {outline:0; }
+
+button:hover{cursor: pointer;}
+
+</style>
+<body>
+
+        <div  style=" background-color: hsl(0, 4%, 95%);margin:15px ">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/logo.jpg" width=200px  height=65px>
+                        <input  type="text" placeholder="Search" style="padding: 3px 15px; border-radius: 12px; border: 1 px solid; margin:0 0 0 8%" >
+                        <i id="filtersubmit" class="fa fa-search"></i>
+                    </div>
+                    <div  style="float:right; margin:10px 10px " >
+                            <label class="pd20 fa fa-bell" ><label>
+                            <label  class="pd10">Welcome , Admin  &lt; Mandy&gt;</label>
+                            <button style="padding: 5px 15px; border-radius: 12px;">Logout</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="border" style="float:left; display:inline-block; margin: 15px 15px 15px 60px ; width: 250px; height: 520px; border-radius: 8px; background-color: hsl(0, 4%, 95%);padding: 5px">
+                    <h3 style="background-color: lightgrey; border-radius: 2px;padding: 5px">Profile <small style="float: right;">   Edit</small></h3>
+                    <img src="images/blank.jfif" style="margin:5px 50px 10px;" height=150px width=150px>
+                    <p style="text-align:center"><b style="font-size:30px">Helen cho</b> <br><br> ID <br> GRZLY17234<br><br>Designation<br>Sr.Admin<br><br>Office<br>NYC,NY,USA</p><br>
+                    
+            </div>
+
+            <div style="width:950px; height: 520px; display:inline-block; float:left; margin: 15px;">
+                <div>
+                    <input type="button" class="tablink active" value="PRODUCTS" >
+                    <input type="Button" class="tablink" value="VENDORS">
+                    <input type="Button" style="width: 288px;background-color: gainsboro;outline: none;cursor: pointer; font-size: 17px; padding: 20px 16px;border: none;" >
+                </div>
+                <div style="margin: 20px 0px; float:left; width:100% ">
+                    
+                    
+                    <select class="input_fieldpage2" disabled >
+                                <option>Choose Category</option>
+                    </select>
+                    <input type="text" class="input_fieldpage2" placeholder="Search Category">
+                    <i id="filtersubmitCategory" class="fa fa-search"></i>
+                    <select class="input_fieldpage2"  >
+                            <option disabled selected>Sort By</option>
+                            <option>Brand</option>
+                            <option>Rating</option>
+                            <option>Category</option>
+                    </select>
+                    <button style="border-radius: 18px;float:right; padding:6px; width:150px ; border:none; background-color: rgb(173, 171, 171);color: white">Add Product</button>
+                    
+                </div>
+
+                <div class="table_enhnc">
+                        <table class="table table-bordered" style="border: 2px solid white">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Product List</th>
+                                    <th scope="col">Brand</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Rating</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody >
+                                  <tr>
+                                    <td><div class="round">
+                                            <input type="checkbox" id="checkbox" >
+                                            <label for="checkbox"></label>
+                                          </div>
+                                        </td>
+                                    <td>Trimmer</td>
+                                    <td>Philips</td>
+                                    <td>Personal care</td>
+                                    <td>4.7</td>
+                                    <td>
+                                            <button disabled>View</button>
+                                            <button disabled>Block</button>
+                                            <button disabled>Remove</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                        <td><div class="round">
+                                                <input type="checkbox" id="checkbox1" />
+                                                <label for="checkbox1"></label>
+                                              </div>
+                                            </td>
+                                        <td>Shaver</td>
+                                        <td>Braun</td>
+                                        <td>Personal care</td>
+                                        <td>4.8</td>
+                                        <td>
+                                                <button disabled>View</button>
+                                                <button disabled>Block</button>
+                                                <button disabled>Remove</button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                            <td><div class="round">
+                                                    <input type="checkbox" id="checkbox2" />
+                                                    <label for="checkbox2"></label>
+                                                  </div>
+                                                </td>
+                                    
+                                            <td>Macbook Pro</td>
+                                            <td>Apple</td>
+                                            <td>Laptops</td>
+                                            <td>4.9</td>
+                                            <td>
+                                                    <button disabled>View</button>
+                                                    <button disabled>Block</button>
+                                                    <button disabled>Remove</button>
+                                            </td>
+                                          </tr>    
+                                          <tr>
+                                                <td><div class="round">
+                                                        <input type="checkbox" id="checkbox3" />
+                                                        <label for="checkbox3"></label>
+                                                      </div>
+                                                    </td>
+                                                <td>iMac 27"</td>
+                                                <td>Apple</td>
+                                                <td>Laptops</td>
+                                                <td>4.6</td>
+                                                <td>
+                                                        <button disabled>View</button>
+                                                        <button disabled>Block</button>
+                                                        <button disabled>Remove</button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                    <td><div class="round">
+                                                            <input type="checkbox" id="checkbox4" />
+                                                            <label for="checkbox4"></label>
+                                                          </div>
+                                                        </td>
+                                                    <td>Micron Pens</td>
+                                                    <td>Sakura Pigma</td>
+                                                    <td>Art Supplies</td>
+                                                    <td>4.7</td>
+                                                    <td>
+                                                            <button disabled>View</button>  
+                                                            <button disabled>Block</button>  
+                                                            <button disabled>Remove</button>  
+                                                    </td>
+                                                  </tr>
+
+                                                  <tr>
+                                                        <td><div class="round">
+                                                                <input type="checkbox" id="checkbox5" />
+                                                                <label for="checkbox5"></label>
+                                                              </div>
+                                                            </td>
+                                    
+                                                        <td>Paint Markers</td>
+                                                        <td>Copic</td>
+                                                        <td>Art Supplies</td>
+                                                        <td>4.2</td>
+                                                        <td>
+                                                                <button disabled>View</button>
+                                                                <button disabled>Block</button>
+                                                                <button disabled>Remove</button>
+                                                        </td>
+                                                      </tr>
+
+
+                                 
+                                </tbody>
+                              </table>
+                </div>
+                
+            </div>
+
+            
+
+
+    
+</body>
+</html>

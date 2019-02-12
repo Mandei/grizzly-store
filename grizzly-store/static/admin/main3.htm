@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.pd10
+{
+       margin:8px 20px;
+}
+
+.pd20
+{
+    margin:8px 35px;
+}
+  
+#filtersubmit {
+    position: relative;
+    z-index: 1;
+    left: -30px;
+    color: #7B7B7B;
+    cursor:pointer;
+    
+}
+
+.tablink
+ {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 16px;
+  font-size: 17px;
+  width: 330px;
+  box-sizing: border-box;
+}
+
+.active,.tablink:hover
+{
+    opacity: 0.6;
+}
+
+div.place_bottom_parent
+{
+    position: relative;
+}
+
+div.place_bottom
+ {
+  position: absolute;
+  bottom: 0px;
+ } 
+
+ .above_other
+  {
+  background-color:lightgray; /* Green background */
+  border-radius: 20px;
+  color: black; /* White text */
+  padding: 5px 10px; /* Some padding */
+  margin:8px 50px 0;
+  cursor: pointer; /* Pointer/hand icon */
+  width:100px;/* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  }
+
+</style>
+<body>
+
+            <div  style=" background-color: hsl(0, 4%, 95%);margin:15px ">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/logo.jpg" width=200px  height=65px>
+                        <input  type="text" placeholder="Search" style="padding: 3px 15px; border-radius: 12px; border: 1 px solid; margin:0 0 0 8%" >
+                        <i id="filtersubmit" class="fa fa-search"></i>
+                    </div>
+                    <div  style="float:right; margin:10px 10px " >
+                            <label class="pd20 fa fa-bell" ><label>
+                            <label  class="pd10">Welcome , Admin  &lt; Mandy&gt;</label>
+                            <button style="padding: 5px 15px; border-radius: 12px;">Logout</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="border" style="float:left; display:inline-block; margin: 15px 15px 15px 60px ; width: 250px; height: 520px; border-radius: 8px; background-color: hsl(0, 4%, 95%);padding: 5px">
+                    <h3 style="background-color: lightgrey; border-radius: 2px;padding: 5px">Profile <small style="float: right;">   Edit</small></h3>
+                    <img src="images/blank.jfif" style="margin:5px 50px 10px;" height=150px width=150px>
+                    <p style="text-align:center"><b style="font-size:30px">Helen cho</b> <br><br> ID <br> GRZLY17234<br><br>Designation<br>Sr.Admin<br><br>Office<br>NYC,NY,USA</p><br>
+                    
+            </div>
+
+            <div  style="width:700px; height: 520px; display:inline-block; float:left; margin:15px">
+                 <input type="button" class="tablink active" value="PRODUCTS" >
+                 <input type="Button" class="tablink" value="VENDORS">
+                <h3>Trimmer <small>by Philips <button style="background-color:black; border-radius: 15px"><i class="fa fa-pencil" style="color: whitesmoke; font-size:17px; padding:0px 2px 3px"></i></button></small></h3>
+                <p> <i class="fa fa-star" style="color: grey"></i> 4.7</p>
+                <div class="place_bottom_parent" style="width:350px ;height: 372px; float:left; background-color: lightgrey;">
+                        <i class="fa fa-pencil"></i>
+                    
+                    <i class="fa fa-angle-left fa-3x" style="margin-top: 150px;float: left;"></i>
+                    <i class="fa fa-angle-right fa-3x" style="margin-top: 150px; float:right"></i>
+                    <div class="place_bottom" ><p style="text-align:center; width: 300px; font-size: 20px">Product Image Carousel</p> </div>
+
+                </div >
+
+
+                <div class="place_bottom_parent" style="width:285px ;height:352px; float:right; margin:20px 20px 0px 0px">
+                <h4>Product Description</h4>
+                <img src="images/content.png" width=280px height=200px>
+
+                <div class=" place_bottom" >
+                    <h3>Rs. XXXX/- <small>15%off</small></h3>
+                </div>
+                
+                </div>
+
+               
+            </div>
+
+            <div class="place_bottom_parent" style="width:200px; height: 520px; display:inline-block; float: right; margin: 15px;">
+                    <div class="place_bottom" >
+                    <button  class="above_other">Finish</button>
+                    <button  class="above_other">Cancel</button>
+                    </div>
+                    </div>
+
+            
+    
+</body>
+</html>
