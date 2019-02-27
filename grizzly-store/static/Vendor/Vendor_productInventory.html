@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Add Product</title>
+    <title>Product Inventory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" >
     <script src="scripts/main.js"></script>
@@ -22,7 +22,7 @@
             </div>
             <div class="mg60 float_left"  >
                     <label class="mg60 fa fa-bell " ></label>
-                    <label  class="mg20 ">Welcome , Admin  &lt; Mandy&gt;</label>
+                    <label  class="mg20 ">Welcome , Admin  &lt; Helen Cho &gt;</label>
                     <button class="logoutbutton">Logout</button>
             </div>
         </div>
@@ -38,9 +38,9 @@
 
             <div class="main_divpag32">
                 <div>
-                    <input type="button" class="tabbar active" value="PRODUCTS" >
-                    <input type="Button" class="tabbar" value="INVENTORY">
-                    <input type="Button" class="tabbar2" value="PROFILE" >
+                    <input type="button" class="tabbar " value="PRODUCTS" >
+                    <input type="Button" class="tabbar active" value="INVENTORY">
+                    
                 </div>
                 <div class="main_subdivpag32">
                     
@@ -58,8 +58,6 @@
                             <option>Rating</option>
                             <option>Category</option>
                     </select>
-
-                    <button class="add_productbtn">Add Product</button>
                     
                 </div>
 
@@ -69,8 +67,12 @@
                                   <tr>
                                     <th scope="col"></th>
                                     <th scope="col">Product List</th>
-                                    <th scope="col">Brand</th>
-                                    <th scope="col">Category</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">In Stock</th>
+                                    <th scope="col">Reg</th>
+                                    <th scope="col">Buffer</th>
+                                    <th scope="col">Price/Item</th>
+                                    <th scope="col">Pending</th>
                                     <th scope="col">Rating</th>
                                     <th scope="col"></th>
                                   </tr>
@@ -83,13 +85,15 @@
                                           </div>
                                         </td>
                                     <td>Trimmer</td>
-                                    <td>Philips</td>
-                                    <td>Personal care</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                     <td>4.7</td>
                                     <td>
-                                            <button disabled>View</button>
-                                            <button disabled>Block</button>
-                                            <button disabled>Remove</button>
+                                      <button disabled>Manage</button>
                                     </td>
                                   </tr>
                                   <tr>
@@ -99,13 +103,16 @@
                                               </div>
                                             </td>
                                         <td>Shaver</td>
-                                        <td>Braun</td>
-                                        <td>Personal care</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td>4.8</td>
                                         <td>
-                                                <button disabled>View</button>
-                                                <button disabled>Block</button>
-                                                <button disabled>Remove</button>
+                                                <button disabled>Manage</button>
+                                                
                                         </td>
                                       </tr>
                                       <tr>
@@ -116,13 +123,15 @@
                                                 </td>
                                     
                                             <td>Macbook Pro</td>
-                                            <td>Apple</td>
-                                            <td>Laptops</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                             <td>4.9</td>
                                             <td>
-                                                    <button disabled>View</button>
-                                                    <button disabled>Block</button>
-                                                    <button disabled>Remove</button>
+                                              <button disabled>Manage</button>
                                             </td>
                                           </tr>    
                                           <tr>
@@ -132,13 +141,15 @@
                                                       </div>
                                                     </td>
                                                 <td>iMac 27"</td>
-                                                <td>Apple</td>
-                                                <td>Laptops</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
                                                 <td>4.6</td>
                                                 <td>
-                                                        <button disabled>View</button>
-                                                        <button disabled>Block</button>
-                                                        <button disabled>Remove</button>
+                                                  <button disabled>Manage</button>
                                                 </td>
                                               </tr>
                                               <tr>
@@ -148,13 +159,15 @@
                                                           </div>
                                                         </td>
                                                     <td>Micron Pens</td>
-                                                    <td>Sakura Pigma</td>
-                                                    <td>Art Supplies</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>>
                                                     <td>4.7</td>
                                                     <td>
-                                                            <button disabled>View</button>  
-                                                            <button disabled>Block</button>  
-                                                            <button disabled>Remove</button>  
+                                                      <button disabled>Manage</button> 
                                                     </td>
                                                   </tr>
 
@@ -166,13 +179,14 @@
                                                             </td>
                                     
                                                         <td>Paint Markers</td>
-                                                        <td>Copic</td>
-                                                        <td>Art Supplies</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
                                                         <td>4.2</td>
-                                                        <td>
-                                                                <button disabled>View</button>
-                                                                <button disabled>Block</button>
-                                                                <button disabled>Remove</button>
+                                                        <td><button disabled>Manage</button>
                                                         </td>
                                                       </tr>
 

@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -41,18 +44,26 @@
 
             
             <div  class="main_divpage3">
-                 <input type="button" class="tabbar active" value="PRODUCTS" >
-                 <input type="Button" class="tabbar" value="VENDORS">
+                    <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item pill">
+                              <a class="tabbar nav-link active" data-toggle="pill" href="#addProduct">PRODUCT</a>
+                            </li>
+                            <li class="nav-item pill">
+                              <a class="tabbar nav-link" data-toggle="pill" href="#vendorDiv">VENDOR</a>
+                            </li>
+                            
+                    </ul>
+                 
                 <h3>Trimmer <small>by Philips <button class="pencil_button"><i class="fa fa-pencil pencil_icon"></i></button></small></h3>
                 <p> <i class="fa fa-star" style="color: grey"></i> 4.7</p>
                 <div class="place_bottom_parent main_divpage3_leftimg">
-                        <i class="fa fa-pencil"></i>
-                    
+                    <i class="fa fa-pencil"></i>
                     <i class="fa fa-angle-left fa-3x float_left" style="margin-top: 150px;"></i>
                     <i class="fa fa-angle-right fa-3x " style="margin-top: 150px; float:right"></i>
                     <div class="place_bottom leftimg_label"> <p >Product Image Carousel</p> </div>
 
                 </div >
+                
 
 
                 <div class="place_bottom_parent main_divpage3_rightdiv" >

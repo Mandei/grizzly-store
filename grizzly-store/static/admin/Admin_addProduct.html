@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Add Product</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles\main.css" />
+    
     <script src="scripts\main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles\main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
+
+
 <body>
    
 
@@ -37,44 +43,57 @@
         </div>
 
         <div class="main_div_window" >
-            <input type="button" class="tabbar active" value="PRODUCTS" >
-            <input type="Button" class="tabbar" value="VENDORS"><br><br><br>
-            <div class="float_left">
-            <div class="place_bottom_parent plus_div" >
-                <label class="mg10">1</label>
-                <input type="image" src="images/plus_sign.png" width=200px height=182px style="margin: 50px 100px" >
-                <div class="place_bottom" ><p class="img_label">Add Images</p> </div>
-            </div>
-            <div class="Style_button" Style="padding-top:10px">
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            </div>
-            </div>
-            <div class="float_left main_input_div" >
-            <input type="text" class="main_input" placeholder="Enter Product Id" ><br>
-            <select class="main_input" >
-                <option>Category</option>
-                <option>Electronics</option>
-                <option>Grocery</option>
-                <option>Fashion and Lifestyle</option>
-            </select>
-            <input type="text" class="main_input" placeholder="Name"><br>
-            <input type="text" class="main_input" placeholder="Description"><br>
-            <input type="text" class="main_input" placeholder="Price"><br>
-            </div>
-            <br>
-           
-            
-            
+                <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item pill">
+                          <a class="tabbar nav-link active" data-toggle="pill" href="#addProduct">PRODUCT</a>
+                        </li>
+                        <li class="nav-item pill">
+                          <a class="tabbar nav-link" data-toggle="pill" href="#vendorDiv">VENDOR</a>
+                        </li>
+                </ul>
+
+                <br>
+                <div class="tab-content">
+                    <div id="addProduct" class="tab-pane fade in active">
+                    
+                                <div class="float_left">
+                                    <div class="place_bottom_parent plus_div" >
+                                    <label class="mg10">1</label>
+                                    <input type="image" src="images/plus_sign.png" width=200px height=182px style="margin: 50px 100px" >
+                                    <div class="place_bottom" ><p class="img_label">Add Images</p> </div>
+                                        </div>
+                                    <div class="Style_button" Style="padding-top:10px">
+                                            <button>2</button>
+                                            <button>3</button>
+                                            <button>4</button>
+                                            <button>5</button>
+                                    </div>
+                                </div>
+                                <div class="float_left main_input_div" >
+                                        <input type="text" class="main_input" placeholder="Enter Product Id" ><br>
+                                        <select class="main_input" >
+                                            <option disabled selected>Category</option>
+                                            <option>Electronics</option>
+                                            <option>Grocery</option>
+                                            <option>Fashion and Lifestyle</option>
+                                        </select>
+                                        <input type="text" class="main_input" placeholder="Name"><br>
+                                        <input type="text" class="main_input" placeholder="Description"><br>
+                                        <input type="text" class="main_input" placeholder="Price"><br>
+                                </div>
+                    </div>
+                
+                    <div id="vendorDiv" class="tab-pane fade">
+                            <h3>Vendor:</h3>
+                    </div>
+                </div>
        
-    </div >
+        </div >
 
         <div class="place_bottom_parent place_bottom_div" >
         <div class="place_bottom" >
         <button  class="above_other ">Add</button>
-        <button  class="above_other">Cancel</button>
+        <a  class="above_other">Cancel</a>
         </div>
         </div>
     
